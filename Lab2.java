@@ -16,15 +16,15 @@ public class Lab2 {
 	// Assume that the original man is also going to St. Ives, so
 	// the boolean variable manGoingToStIves should be true.
 	
-	boolean manGoingToStIves = !true;
+	boolean manGoingToStIves = true;
 
-	// short numWives = 8;
+	   int numWives = 7;
 
-	// int numSacksPerWife = (double) 7;
+	   int numSacksPerWife = 7;
 	
-	// int numCatsPerSack = 7.0;
+	   int numCatsPerSack = 7;
 
-	// int numKitsPerCat = (long) 7;
+	   int numKitsPerCat = 7;
 
 	   int total;
 
@@ -38,11 +38,14 @@ public class Lab2 {
 	    // all of the wives, sacks, cats, and kittens are as well, along
 	    // with the narrator.
 	    // Calculate the number going to St. Ives
-	    total = -1;
+	    total = (1 + 1 + numWives + (numWives * numSacksPerWife) + ((numWives * numSacksPerWife) * numCatsPerSack) + (((numWives * numSacksPerWife) * numCatsPerSack) * numKitsPerCat));
 	} else {
 	    // Otherwise, only the narrator is going!
 	    total = 1;
+		
 	}
+	
+	System.out.println("Number going to St. Ives is " + total);
 	
 	// 3. Right before exiting, the system should print
 	// "Number going to St. Ives is " and then, on the same line,
